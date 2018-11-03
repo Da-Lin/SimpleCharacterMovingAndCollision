@@ -15,6 +15,10 @@
 		DA1645D41E255F9100950488 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA1645D21E255F9100950488 /* Main.storyboard */; };
 		DA1645D61E255F9100950488 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA1645D51E255F9100950488 /* Assets.xcassets */; };
 		DA1645D91E255F9100950488 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA1645D71E255F9100950488 /* LaunchScreen.storyboard */; };
+		DA1646DC1E276F9700950488 /* Castle.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1646DB1E276F9700950488 /* Castle.swift */; };
+		FBD2AECF218CF0AA00B49DC6 /* MyTileSet.sks in Resources */ = {isa = PBXBuildFile; fileRef = FBD2AECE218CF0AA00B49DC6 /* MyTileSet.sks */; };
+		FBD2AED2218D30CD00B49DC6 /* MyParticle.sks in Resources */ = {isa = PBXBuildFile; fileRef = FBD2AED0218D30CD00B49DC6 /* MyParticle.sks */; };
+		FBD2AED3218D30CD00B49DC6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBD2AED1218D30CD00B49DC6 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +32,10 @@
 		DA1645D51E255F9100950488 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA1645D81E255F9100950488 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DA1645DA1E255F9100950488 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA1646DB1E276F9700950488 /* Castle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Castle.swift; sourceTree = "<group>"; };
+		FBD2AECE218CF0AA00B49DC6 /* MyTileSet.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MyTileSet.sks; sourceTree = "<group>"; };
+		FBD2AED0218D30CD00B49DC6 /* MyParticle.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MyParticle.sks; sourceTree = "<group>"; };
+		FBD2AED1218D30CD00B49DC6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +52,8 @@
 		DA1645BC1E255F9100950488 = {
 			isa = PBXGroup;
 			children = (
+				FBD2AED0218D30CD00B49DC6 /* MyParticle.sks */,
+				FBD2AED1218D30CD00B49DC6 /* Assets.xcassets */,
 				DA1645C71E255F9100950488 /* PlayAround */,
 				DA1645C61E255F9100950488 /* Products */,
 			);
@@ -62,8 +72,10 @@
 			children = (
 				DA1645C81E255F9100950488 /* AppDelegate.swift */,
 				DA1645CA1E255F9100950488 /* GameScene.sks */,
+				FBD2AECE218CF0AA00B49DC6 /* MyTileSet.sks */,
 				DA1645CC1E255F9100950488 /* Actions.sks */,
 				DA1645CE1E255F9100950488 /* GameScene.swift */,
+				DA1646DB1E276F9700950488 /* Castle.swift */,
 				DA1645D01E255F9100950488 /* GameViewController.swift */,
 				DA1645D21E255F9100950488 /* Main.storyboard */,
 				DA1645D51E255F9100950488 /* Assets.xcassets */,
@@ -105,7 +117,7 @@
 				TargetAttributes = {
 					DA1645C41E255F9100950488 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = GQXZXDX8YV;
+						DevelopmentTeam = 8XJ4L42UN7;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -133,10 +145,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBD2AECF218CF0AA00B49DC6 /* MyTileSet.sks in Resources */,
 				DA1645D41E255F9100950488 /* Main.storyboard in Resources */,
 				DA1645CB1E255F9100950488 /* GameScene.sks in Resources */,
 				DA1645D61E255F9100950488 /* Assets.xcassets in Resources */,
+				FBD2AED2218D30CD00B49DC6 /* MyParticle.sks in Resources */,
 				DA1645D91E255F9100950488 /* LaunchScreen.storyboard in Resources */,
+				FBD2AED3218D30CD00B49DC6 /* Assets.xcassets in Resources */,
 				DA1645CD1E255F9100950488 /* Actions.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -151,6 +166,7 @@
 				DA1645CF1E255F9100950488 /* GameScene.swift in Sources */,
 				DA1645D11E255F9100950488 /* GameViewController.swift in Sources */,
 				DA1645C91E255F9100950488 /* AppDelegate.swift in Sources */,
+				DA1646DC1E276F9700950488 /* Castle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,12 +289,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = GQXZXDX8YV;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8XJ4L42UN7;
 				INFOPLIST_FILE = PlayAround/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.cartoonsmart.PlayAround;
+				PRODUCT_BUNDLE_IDENTIFIER = dain.PlayAround;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -286,12 +306,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = GQXZXDX8YV;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8XJ4L42UN7;
 				INFOPLIST_FILE = PlayAround/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.cartoonsmart.PlayAround;
+				PRODUCT_BUNDLE_IDENTIFIER = dain.PlayAround;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -314,6 +338,7 @@
 				DA1645DF1E255F9100950488 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
